@@ -1,19 +1,7 @@
-
-// Program: Nested Structure Example - Student with Date of Birth
 #include <stdio.h>
-struct Date {
-    int day;
-    int mon;
-    int yr;
-};
-struct Student {
-    int id;
-    char name[20];
-    struct Date dob; // nested structure
-};
 int main() {
-    struct Student s1 = {101, "Kiran", {15, 8, 2000}};
-    printf("Name: %s\n", s1.name);
-    printf("DOB: %d-%d-%d\n", s1.dob.day, s1.dob.mon, s1.dob.yr);
+    int arr[] = {10, 20, 30, 40, 50};
+    int count = sizeof(arr) / sizeof(arr[0]);
+    printf("Total number of elements in the array = %d\n", count);
     return 0;
 }
